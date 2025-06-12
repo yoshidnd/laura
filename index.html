@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engr. Laura</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Red Theme Colors */
+        :root {
+            --primary-red: #E60000; /* Bright, vibrant red */
+            --secondary-red: #CC0000; /* Slightly darker red for accents */
+            --accent-light: #FFCCCC; /* Light pinkish-red for subtle highlights */
+            --text-color: #333;
+            --white: #fff;
+            --light-gray: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-red);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: var(--secondary-red);
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background-color: var(--primary-red);
+            left: 20%;
+            bottom: -10px;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .project-card h3 {
+            color: var(--primary-red);
+            margin-top: 0;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--secondary-red);
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .project-card a:hover {
+            border-bottom: 2px solid var(--primary-red);
+        }
+
+        /* Contact Section */
+        #contact .contact-button {
+            background-color: var(--primary-red);
+            color: var(--white);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        #contact .contact-button:hover {
+            background-color: var(--secondary-red);
+            transform: translateY(-2px);
+        }
+
+        #contact p {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        #contact a {
+            color: var(--secondary-red);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-red);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr; /* Stack projects on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Laura Ashley Signo</h1>
+            <p>Civil Engineer | Structure Engineering</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a dedicated Civil Engineer with a strong focus on Structural Engineering. My passion lies in designing and analyzing robust and efficient structures that stand the test of time. I am committed to continuous learning and applying innovative solutions to complex engineering challenges.</p>
+            <p>This space showcases some of my key projects and highlights my approach to engineering problem-solving.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <h3>Project 1: Proposed 7-Storey Building with Penthouse at Manila</h3>
+                    <p>Responsible for the structural design and analysis of a multi-story residential building, ensuring compliance with local building codes and seismic considerations. Focused on optimizing material usage and structural integrity.</p>
+                    <a href="#" target="_blank">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: Proposed 7 Units Three-Storey Townhouse</h3>
+                    <p>Led the structural planning and design for a series of modern townhouses, incorporating efficient layouts and robust foundation systems. Collaborated with architectural teams to integrate structural elements seamlessly.</p>
+                    <a href="#" target="_blank">Learn More</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>I'm always open to discussing new projects, collaborations, or opportunities. Feel free to reach out!</p>
+            <button id="addContactBtn" class="contact-button">Add to Contacts</button>
+            <p>Email: <a href="mailto:lauraashleysigno416@gmail.com">lauraashleysigno416@gmail.com</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/helen4ugh" target="_blank">facebook.com/helen4ugh</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Laura Signo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('addContactBtn').addEventListener('click', function() {
+            // Define the contact details for Laura Ashley Signo
+            const contact = {
+                name: "Laura Ashley Signo", // Your full name
+                email: "lauraashleysigno416@gmail.com", // Your email
+                phone: "", // Optional: Your phone number, format like "+15551234567". Leave empty if not applicable.
+                facebook: "https://www.facebook.com/helen4ugh", // Your Facebook profile URL
+                title: "Civil Engineer | Structure Engineering" // Your job title
+            };
+
+            // Create a vCard string (standard format for electronic business cards)
+            let vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:${contact.name}
+EMAIL;TYPE=INTERNET:${contact.email}`;
+
+            // Add optional fields if they exist
+            if (contact.phone) {
+                vcard += `\nTEL;TYPE=CELL:${contact.phone}`;
+            }
+            if (contact.facebook) {
+                vcard += `\nURL;TYPE=Facebook:${contact.facebook}`;
+            }
+            if (contact.title) {
+                vcard += `\nTITLE:${contact.title}`;
+            }
+
+            vcard += `\nEND:VCARD`;
+
+            // Create a Blob from the vCard string. A Blob represents file-like objects of immutable, raw data.
+            const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+
+            // Use a temporary URL to create a downloadable link for the vCard file
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            // Set the filename for the downloaded .vcf file (e.g., "Laura_Ashley_Signo.vcf")
+            a.download = `${contact.name.replace(/\s/g, '_')}.vcf`;
+
+            // Append the temporary link to the document body to make it clickable
+            document.body.appendChild(a);
+
+            // Programmatically click the link to trigger the download
+            a.click();
+
+            // Clean up: remove the temporary URL and the link element after the download is initiated
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            // Provide a user notification that the contact file has been downloaded
+            // For a more advanced website, consider replacing 'alert' with a custom modal or message box for better UX.
+            alert("The contact file has been downloaded! Please open the downloaded .vcf file to add Laura to your phone's contacts.");
+        });
+    </script>
+</body>
+</html>
